@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <!-- Creazione biglietto -->
+
+    <div id="box" class="container py-3 mt-4 m-auto shadow rounded-3">
+
+        <div class="col-9 m-auto">
+            <h1 class="my-3 text-center">Creazione biglietto</h1>
+
+            <div class="row">
+                <div class="col-4 my-3 text-center">
+                    <label for="nomeCognome" class="form-label">Inserisci nome e cognome</label>
+                    <input type="text" class="form-control" id="nomeCognome" aria-describedby="chilometri">
+                  </div>
+        
+                <div class="col-4 my-3 text-center">
+                  <label for="numeroKm" class="form-label">Quanti chilometri vuoi percorrere?</label>
+                  <input type="number" class="form-control" id="numeroKm" aria-describedby="chilometri">
+                </div>
+    
+                <div class="col-4 my-3 text-center">
+                  <label for="etaPasseggero" class="form-label">Quanti anni hai?</label>
+                  <input type="number" class="form-control" id="etaPasseggero">
+                </div>
+                
+                <div class="row m-auto w-50 gap-3 py-3">
+                    <button type="submit" class="btn btn-outline-dark col" onclick="creazioneBiglietto()">Conferma</button>
+                    <button type="submit" class="btn btn-outline-dark col">Annulla</button>
+                </div>
+                
+            </div>     
+        </div>
+    </div>
+
+    <!-- Biglietto creato -->
+
+    <div id="box2" class="d-none container w-75 py-3 mt-5 m-auto bg-body-tertiary shadow rounded-3">
+
+        <div class="row text-center">
+            <div id="nome" class="col-3 border-end">
+                <h5>NOME</h5>
+            </div>
+            <div id="offerta" class="col-2 border-end">
+                <h5>Offerta</h5>
+            </div>
+            <div id="carrozza" class="col-2 border-end">
+                <h5>Carrozza</h5>
+            </div>
+            <div id="codice" class="col-2 border-end">
+                <h5>Codice CP</h5>
+            </div>
+            <div id="costo" class="col-3">
+                <h5>Costo biglietto</h5>
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
